@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Maplub/AirQualityData/master/PM10_2018_daily.csv"
+  },
+  "title": "PM10 : Anuual Report 2018",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "timeUnit": "month",
+      "field": "time",
+      "type": "ordinal",
+      "title": "เดือน"
+    },
+    "y": {
+      "aggregate": "mean",
+      "field": "pm10",
+      "type": "quantitative",
+      "title": "ค่า pm10 เฉลี่ยในแต่ละเดือนปี 2018"
+    }
+  },
+  "config": {}
+}
